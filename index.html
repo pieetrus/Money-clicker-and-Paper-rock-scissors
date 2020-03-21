@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <title>Strona startowa</title>
+
+    <!-- Zalinkowanie pliku ze stylami CSS -->
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+</head>
+
+<body>
+
+<!-- Pasek nawigacyjny -->
+<header>
+ <!-- pasek nawigacyjny -->
+<div class = "toolbar">
+
+    <img src="images/logo1.png" alt = "logo" class = "logo">
+
+    <nav>
+        <ul>
+            <li> <a href="index.html">Strona Główna</a></li>
+            <li> <a href="pages/strona1.html"> Kamień papier nożyce </a></li>
+            <li> <a href="pages/strona2.html"> O mnie</a></li>
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<!-- Div zawierający całą zawartość strony oprócz paska nawigacycjnego -->
+<div class="content">
+<!-- pasek z monetami i z czasem -->
+<div class="bar">
+
+    <div class="money-box">
+        <img src="images/coins.png" alt="coin">
+        <span id="money">0</span>
+    </div>
+
+    <div class="income-box">
+        <img src="images/income.png" alt="income">
+        <span id="income">1</span>
+    </div>
+
+    <div class="time-box">
+        <img src="images/clock.png" alt="clock">
+        <span id ="time">0</span>
+    </div>
+
+</div>
+
+
+<!-- Opis -->
+<div class="description-box">
+    <p id="desc1">Witaj!</p>
+    <span id = "desc2">Co sekundę dostajesz monetę, możesz zdobyć monetę za każde kliknięcie w przycisk.</span>
+</div>
+<!-- Przyciski -->
+<div class="buttons">
+<button id= "money-button" onclick="" value="add_money"><img src="images/coin.png" alt="papier" class="paper"></button>
+</div>
+<!-- Okienko z wiadomościami z gry -->
+<div class="message-box">
+    <span id="button-message"></span>
+</div>
+
+<!-- Zawiera elementy które można zakupić -->
+<div class="shop-container">
+
+<div class="first-element">
+    <button id = "first-element-button"> <img src="images/ukrainiec.png" alt=""></button>
+    <span class="shop-elements-description" id="first-element-description"> Zatrudnij ukraińca za jedyne <b>35</b> monet. Twój zarobek wzrośnie o dwie monety na sekundę. Aktualnie posiadasz </span>
+    <span id="first-element-amount">&nbsp; 0 ukraińców</span>
+</div>
+
+<div class="second-element">
+    <button id = "second-element-button"> <img src="images/polaczek.jpg" alt=""></button>
+    <span class="shop-elements-description" id="second-element-description"> Zatrudnij polaczka za <b>100</b> monet. Twój zarobek wzrośnie o 10 monet na sekundę. Aktualnie posiadasz </span>
+    <span id="second-element-amount">&nbsp; 0 polaczków</span>
+</div>
+
+<div class="third-element">
+    <button id = "third-element-button"> <img src="images/gielda.jpg" alt=""></button>
+    <span class="shop-elements-description" id="third-element-description"> Zainwestuj na giełdzie <b>2000</b> monet. Zarobisz dzięki temu 100 monet na sekundę. Aktualnie posiadasz </span>
+    <span id="third-element-amount">&nbsp; 0 inwestycji</span>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<!-- Zalinkowanie pliku ze skryptem JS -->
+<script charset = "utf-8" src="scripts/skrypty.js"></script>
+
+</html>

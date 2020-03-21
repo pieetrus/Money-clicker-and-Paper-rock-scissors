@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url(../images/background.jpg);
+    box-sizing: border-box;
+}
+
+.container{
+    padding:20px;
+}
+h1{
+    color: turquoise;
+}
+
+.aboutme{
+    color: gold;
+    font-size: 20px;
+    font-family: 'Indie Flower';
+
+}
+
+.mojezdj {
+position: absolute;
+left: 75%;
+bottom: 20%;
+cursor: pointer;
+}
+.mojezdj:hover{
+    background-color: fuchsia;
+    transition: 1.5s;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.zdjkredka {
+    position: absolute;
+    left: 62%;
+    bottom: 40%;
+}
+.zdjkredka:hover{
+    background-color: fuchsia;
+    transition: 2s;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+
+}

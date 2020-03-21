@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <title>Kamień papier nożyce</title>
+
+    <!-- Zalinkowanie pliku ze stylami CSS -->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/style1.css" />
+
+</head>
+
+<body>
+    <!-- Pasek nawigacyjny -->
+<header>
+<div class = "toolbar">
+
+    <img src="../images/logo1.png" alt = "logo" class = "logo">
+
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Strona Główna</a></li>
+            <li> <a href="../pages/strona1.html"> Kamień papier nożyce </a></li>
+            <li> <a href="../pages/strona2.html"> O mnie</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+</header>
+    <!-- Cała strona oprócz nagłówka -->
+<div class="container">
+    <div class = "title">
+        <h1> Kamień   papier   nożyce</h1>
+        <!-- <img src="../images/rockpapersissor.png" alt="logo kamień papier nożyce" class = "gamelogo"> -->
+    </div>
+<!-- Box zawierający opis zasad -->
+    <div class="gamerules">
+        <h2>Zasady gry:</h2>
+            <p>Wybierz kamień, papier lub nożyce klikając w jeden z elementów powyżej. Jeśli komputer wybierze element który
+            przegrywa z twoją figurą zdobywasz punkt.
+            <p> W przeciwnym przypadku to komputer zdobywa punkt.</p>
+            <p> <b>Gra toczy się do 10 zdobytych punktów.</b> </p>
+    </div>
+<!-- Zawiera wynik gracza i komputera -->
+    <div class = "score-container">
+        <span class = "user"> TY </span>
+        <span id = "score"></span>
+        <span class = "com"> COM</span>
+    </div>
+    <!-- Przysciki wyboru figury -->
+    <div class="buttons">
+        <button class= "bn" onclick="game(this.value)" value="papier"><img src="../images/paper.png" alt="papier" class="paper"></button>
+        <button class= "bn" onclick="game(this.value)" value="nożyce"><img src="../images/scissors.png" alt="kamień" class="scissors"></button>
+        <button class= "bn" onclick="game(this.value)" value="kamień"><img src="../images/stone.png" alt="nożyce" class="rock"></button>
+    </div>
+
+    <!-- Box z wiadomością kto wygrał i dlaczego -->
+    <div class = "whowin">
+        <span id = "message"></span>
+    </div>
+
+
+</div>
+    <script type="text/javascript" src="../scripts/skrypty1.js"></script>
+</body>
